@@ -1,1 +1,58 @@
 @import "tailwindcss";
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins-Light.ttf');
+}
+
+:root {
+  --primary-color: #345C3A;
+  --primary-accent-color: #edf4ed;
+  --secondary-color: #B08B57;
+  --secondary-accent-color: #E3CBA4;
+}
+
+*, *:before {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  transition-duration: .5s !important;
+}
+
+.grid-item {
+  break-inside: avoid;
+  /* Prevents grid items from breaking */
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 184, 180, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(18, 30, 18, 0.505);
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
