@@ -1,15 +1,29 @@
 import HeadingText from "../components/HeadingText"
 import SubHeadingText from "../components/SubHeadingText"
 import data from "../data"
+import { cardGroupVariants, cardVariants, textVariants } from "../variants"
+import {motion} from 'framer-motion'
 
 function Certification() {
   return (
     <div className='mt-36 flex flex-col items-center'>
-          <HeadingText text="Certifications" align="center" />
-          <SubHeadingText text="Our business certifications & compliance" align="center" />
-          <div className="flex gap-28 items-center max-w-5xl mx-auto mt-12">
-            {data.certfications.map((cert, i) => (
-                <div key={i} className="group relative bg-white overflow-hidden z-10 border border-neutral-200 p-4 min-w-60 max-w-60 min-h-[240px] rounded-3xl
+        <motion.div       
+            variants={textVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className='flex flex-col justify-center items-center'>
+                <HeadingText text="Certifications" align="center" />
+                <SubHeadingText text="Our business certifications & compliance" align="center" />
+          </motion.div>
+          <motion.div 
+            variants={cardGroupVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex gap-28 items-center max-w-5xl mx-auto mt-12">
+              {data.certfications.map((cert, i) => (
+                <motion.div variants={cardVariants} key={i} className="group relative bg-white overflow-hidden z-10 border border-neutral-200 p-4 min-w-60 max-w-60 min-h-[240px] rounded-3xl
                                 hover:-translate-y-2.5 hover:border-transparent hover:drop-shadow-xl">
                     <div className="relative rounded-2xl overflow-hidden w-full min-h-[216px] flex flex-col justify-between items-center">
                         <div className="p-2 relative mt-2">
@@ -36,9 +50,9 @@ function Certification() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
-          </div>
+          </motion.div>
           
     </div>
   )

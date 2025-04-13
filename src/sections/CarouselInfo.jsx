@@ -9,6 +9,8 @@ import 'swiper/css/navigation';
 // import required modules
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
 import data from '../data';
+import { itemVariants, textVariants } from '../variants';
+import {motion} from 'framer-motion'
 
 function CarouselInfo() {
 return (
@@ -35,17 +37,21 @@ return (
          <div className="absolute inset-0 bg-[var(--primary-color)] opacity-40"></div>
          {data.carouselInfo.map((info, i) => (
             <SwiperSlide key={i}>
-              <div className="flex h-100 max-w-4xl px-16 flex-col justify-center items-start">
-
-                <div className="text-white font-semibold text-3xl tracking-widest" data-swiper-parallax="-200">
-                  {info.title}
-                </div>
-                <div className="pt-6 text-sm tracking-wider text-gray-100 leading-6 max-w-4xl" data-swiper-parallax="-100">
-                  <p>
-                    {info.description}
-                  </p>
-                </div>
-              </div>
+              <motion.div
+                variants={textVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                className="flex h-100 max-w-4xl px-16 flex-col justify-center items-start">
+                  <motion.div variants={itemVariants} className="text-white font-semibold text-3xl tracking-widest" data-swiper-parallax="-200">
+                    {info.title}
+                  </motion.div>
+                  <motion.div variants={itemVariants} className="pt-6 text-sm tracking-wider text-gray-100 leading-6 max-w-4xl" data-swiper-parallax="-100">
+                    <p>
+                      {info.description}
+                    </p>
+                  </motion.div>
+              </motion.div>
             </SwiperSlide>
          ))}
       </Swiper>

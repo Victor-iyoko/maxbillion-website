@@ -135,7 +135,7 @@ const data = {
 
     vision: {
         heading: "Your Vision, Our Commitment.",
-        text: "At Max Billion, we don't just manage properties—we create lasting value. From investment strategies to hands-on management, we ensure your real estate journey is smooth and rewarding.",
+        text: "At Maxbillion, we don't just manage properties—we create lasting value. From investment strategies to hands-on management, we ensure your real estate journey is smooth and rewarding.",
         infoSnips: [
             { title: "Hassle-Free Ownership Solutions", subText: "Seamless property acquisition process", icon: smilingFace },
             { title: "Trusted Property Partners", subText: "Certified and registered in Nigeria", icon: shield },
@@ -219,7 +219,7 @@ const data = {
     ],
 
     carouselInfo: [
-        { title: "Beyond Brick & Mortar", description: "We don't just build structures; we create experiences.<br /> Welcome to the future of real estate." },
+        { title: "Beyond Brick & Mortar", description: "We don't just build structures; we create experiences. Welcome to the future of real estate." },
         { title: "Smart Investments, Lasting Returns", description: "Your property should work for you. We help you make smart, high-value real estate decisions." },
         { title: "More Than Transactions, Relationships", description: "At MaxBillion, we're not just selling properties—we're building lifelong partnerships." }
     ],

@@ -5,8 +5,7 @@ import Button from '../components/Button'
 function Footer() {
   return (
     <footer>
-       <div className="bg-[var(--primary-color)] mt-36 p-2 rounded-4xl">
-  
+      <div className="bg-[var(--primary-color)] mt-36 p-2 rounded-4xl">
         <div className="relative z-10 text-white rounded-3xl h-full border-2 border-[var(--secondary-color)] p-10 pb-12">
             {/* <h2 className="text-3xl font-bold">Your Vision, Our Commitment.</h2> */}
             <div className="flex justify-between items-center pb-5 border-b border-b-neutral-300">
@@ -15,9 +14,8 @@ function Footer() {
                 <p className="text-gray-200 text-sm">Experience top-notch customer care service and let us guide you on your property journey.</p>
               </div>
               <a href="tel:+2349067043359">
-                <div className="min-h-full flex flex-col gap-3 justify-between items-center p-9 aspect-square rounded-full bg-[var(--secondary-color)] ring ring-offset-[6px] ring-inset ring-offset-[var(--secondary-color)] cursor-pointer">
-                  <img src={call} className='w-12' alt="call now" />
-                  <span className="text-white text-md tracking-wider text-sm">Call now</span>
+                <div className="min-h-full flex flex-col gap-3 justify-between items-center p-8 aspect-square rounded-full bg-[var(--secondary-color)] ring ring-offset-[6px] ring-inset ring-offset-[var(--secondary-color)] cursor-pointer hover:bg-[var(--secondary-accent-color)] hover:ring-offset-[var(--secondary-accent-color)]">
+                  <img src={call} className='w-14' alt="call now" />
                 </div>
               </a>
             </div>
@@ -34,13 +32,13 @@ function Footer() {
                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
                     </svg>
-                    <span className="text-gray-300 font-semibold text-xs tracking-widest">08067043359</span>
+                    <span className="text-neutral-300 font-semibold text-xs tracking-widest">08067043359</span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-4 aspect-square text-gray-300" viewBox="0 0 16 16">
                       <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
                     </svg>
-                     <span className="text-gray-300 font-semibold text-xs tracking-widest">maxbillion@gmail.com</span>
+                     <span className="text-neutral-300 font-semibold text-xs tracking-widest">maxbillion@gmail.com</span>
                   </div>
                 </div>
               </div>
