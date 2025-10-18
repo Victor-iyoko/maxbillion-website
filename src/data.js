@@ -42,7 +42,7 @@ import negotiateTerms from "./assets/get-started/People talking-bro.svg"
 import signContract from "./assets/get-started/Signing a contract-bro.svg"
 import evaluateOptions from "./assets/get-started/Settings-bro.svg"
 import reviewContract from "./assets/get-started/Partnership-bro.svg"
-import makePayment from "./assets/get-started/pPaid idea-bro.svg"
+import makePayment from "./assets/get-started/Paid idea-bro.svg"
 
 // certification images
 import cac from "./assets/certifications/cac-logo.jpg"
