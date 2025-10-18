@@ -1,13 +1,16 @@
+import Lottie from "lottie-react";
 import HeadingText from "../components/HeadingText";
 import SubHeadingText from "../components/SubHeadingText";
 import data from "../data";
 import { cardGroupVariants, cardVariants, textVariants } from "../variants"
+import support from "../assets/services/Support.json"
 import {motion} from 'framer-motion'
 
 function Services() {
   
   return (
-    <section className='mt-36 flex flex-col items-center'>
+    <section className='mt-36 relative flex flex-col items-center'>
+        <Lottie loop play animationData={support} className="-z-10 absolute top-0 rotate-[-30deg] end-40 w-40" />
         <motion.div       
             variants={textVariants}
             initial="hidden"
@@ -22,10 +25,10 @@ function Services() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={cardGroupVariants}
-            className="flex flex-wrap space-y-5 justify-between items-center max-w-5xl mx-auto mt-12">
+            className="flex flex-wrap space-y-5 gap-4 justify-evenly items-center max-w-5xl mx-auto mt-12">
                 {data.services.map((service, i) => (    
-                    <motion.div variants={cardVariants} key={i} className="group relative bg-white overflow-hidden z-10 border border-neutral-200 p-4 min-w-60 max-w-60 min-h-[240px] rounded-3xl
-                                    hover:-translate-y-2.5 hover:border-transparent hover:drop-shadow-xl">
+                    <motion.div variants={cardVariants} key={i} className={`group relative bg-white overflow-hidden z-10 border border-neutral-200 p-4 min-w-60 max-w-60 min-h-[240px] rounded-3xl
+                                    hover:-translate-y-2.5 hover:border-transparent hover:drop-shadow-xl ${i === 7 ? 'mb-5' : ''}`}>
                         <div className="relative rounded-2xl overflow-hidden w-full min-h-[216px] flex flex-col justify-between items-center">
                             <div className="p-2 relative mt-2 border border-[#03A360] rounded-full
                                         group-hover:before:scale-400 group-hover:border-neutral-100

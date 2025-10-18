@@ -19,7 +19,7 @@ import Address from "./sections/Address"
 function App() {
   
   return (
-    <div className="px-8 pt-4 pb-8 max-w-[1440px] mx-auto poppins-bold">
+    <div className="px-4 md:px-8 pt-4 pb-4 md:pb-8 max-w-[1440px] mx-auto poppins-bold overflow-hidden">
       <Navbar />
       <Hero />
       <Values />

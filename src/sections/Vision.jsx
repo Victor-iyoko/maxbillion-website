@@ -8,20 +8,20 @@ function DarkSectionInfoOne() {
   const {vision} = data
 
   return (
-    <section className="bg-[var(--primary-color)] mt-36 rounded-4xl relative  overflow-hidden h-[500px] ring-3 ring-offset-3 ring-[var(--primary-color)]">
+    <section className="max-[480px]:hidden bg-[var(--primary-color)] mt-36 rounded-4xl relative  overflow-hidden max-h-[500px] ring-3 ring-offset-3 ring-[var(--primary-color)]">
           <motion.div
             variants={textVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="absolute text-white rounded-3xl w-full h-full -translate-y-10 flex flex-col items-center justify-center z-50">
+            className="absolute p-6 text-white rounded-3xl w-full h-full min-[1050px]:-translate-y-10 flex flex-col items-center justify-center z-50">
                   <motion.div variants={itemVariants}>
                       <SubHeadingText text={vision.heading} light align="center"/>
                   </motion.div>
-                  <motion.p variants={itemVariants} className='mb-6 mx-auto text-neutral-200 leading-7 tracking-wide text-center text-[16px] max-w-4xl'>
+                  <motion.p variants={itemVariants} className='mb-6 mx-auto text-sm md:text-md text-neutral-200 leading:6 sm:leading-7 tracking-wide text-center max-w-4xl'>
                      {vision.text}
                   </motion.p>
-                  <motion.div variants={itemVariants} className="mb-8 flex gap-6 justify-center items-center">
+                  <motion.div variants={itemVariants} className="mb-8 hidden min-[900px]:flex flex-wrap gap-6 justify-center items-center">
                       {vision.infoSnips.map((info, i) => <InfoSnips key={i} title={info.title} subText={info.subText} icon={info.icon} /> )}
                   </motion.div>
           </motion.div>

@@ -79,6 +79,14 @@ const futureDevVariants = {
   }
 }
 
+const blobVariants = {
+  hidden: {opacity: 0},
+  visible: {
+    opacity: 1,
+    transition: { duration: 3, ease: [0.25, 0.1, 0.25, 1] }
+  }
+}
+
 
 export {
     textVariants,
@@ -88,5 +96,6 @@ export {
     itemVariants,
     cardGroupVariants,
     cardVariants,
-    futureDevVariants
+    futureDevVariants,
+    blobVariants
 }

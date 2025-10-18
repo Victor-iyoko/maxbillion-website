@@ -63,6 +63,12 @@ import member2 from "./assets/team/team-2.jpg"
 import member3 from "./assets/team/team-3.jpg"
 
 const data = {
+    emailServiceId: "service_gkjbpgu",
+    emailPublicId: "W5hqPX9UR3mRIezjj",
+    contactEmailTempId: "template_4b7kpij",
+    suscriptionEmailTempId: "template_e8ey9jm",
+    googleScriptWebUrl: "https://script.google.com/macros/s/AKfycbzVH3fMIpYpiE0i5ViUbyt_hzBw3ng8PBAGH2Dim3D3_UbohHhEt5t-bd2UC5A3dYE/exec",
+
     values: [
         {
             mainText: "Integrity & Transparency",

@@ -1,8 +1,10 @@
 import HeadingText from "../components/HeadingText"
 import SubHeadingText from "../components/SubHeadingText"
+import accreditation from '../assets/certifications/Accreditation.json'
 import data from "../data"
 import { cardGroupVariants, cardVariants, textVariants } from "../variants"
 import {motion} from 'framer-motion'
+import Lottie from "lottie-react"
 
 function Certification() {
   return (
@@ -12,7 +14,8 @@ function Certification() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className='flex flex-col justify-center items-center'>
+            className='relative flex flex-col justify-center items-center'>
+                <Lottie loop play animationData={accreditation} className="-z-10 absolute top-0 rotate-[30deg] -start-40 w-40" />
                 <HeadingText text="Certifications" align="center" />
                 <SubHeadingText text="Our business certifications & compliance" align="center" />
           </motion.div>
@@ -21,7 +24,7 @@ function Certification() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="flex gap-28 items-center max-w-5xl mx-auto mt-12">
+            className="flex flex-wrap gap-10 md:gap-28 justify-center items-center max-w-5xl mx-auto mt-12">
               {data.certfications.map((cert, i) => (
                 <motion.div variants={cardVariants} key={i} className="group relative bg-white overflow-hidden z-10 border border-neutral-200 p-4 min-w-60 max-w-60 min-h-[240px] rounded-3xl
                                 hover:-translate-y-2.5 hover:border-transparent hover:drop-shadow-xl">

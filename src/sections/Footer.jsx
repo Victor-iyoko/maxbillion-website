@@ -1,32 +1,33 @@
 import logo from '../assets/logo-white.png'
 import call from '../assets/call-outbound.svg'
-import Button from '../components/Button'
+import Suscription from '../components/Suscription'
 
 function Footer() {
   return (
     <footer>
-      <div className="bg-[var(--primary-color)] mt-36 p-2 rounded-4xl">
-        <div className="relative z-10 text-white rounded-3xl h-full border-2 border-[var(--secondary-color)] p-10 pb-12">
-            {/* <h2 className="text-3xl font-bold">Your Vision, Our Commitment.</h2> */}
-            <div className="flex justify-between items-center pb-5 border-b border-b-neutral-300">
-              <div className="flex flex-col gap-3.5">
-                <h3 className="text-white uppercase text-5xl font-semibold tracking-wider">ready to work with us?</h3>
-                <p className="text-gray-200 text-sm">Experience top-notch customer care service and let us guide you on your property journey.</p>
+      <div className="bg-[var(--primary-color)] p-2 rounded-4xl">
+        <div className="relative z-10 text-white rounded-3xl h-full border-2 border-[var(--secondary-color)] p-4 sm:p-6 md:p-10 pb-12">
+           
+            <div className="flex justify-between gap-4 items-center pb-5 border-b border-b-neutral-300">
+              <div className="flex flex-col gap-2.5 lg:gap-3.5">
+                <h3 className="text-white uppercase text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold tracking-wider">ready to work with us?</h3>
+                <p className="hidden sm:block text-gray-200 text-[10px] md:text-xs lg:text-sm leading-5 max-w-[250px] md:max-w-lg lg:max-w-full">Experience top-notch customer care service and let us guide you on your property journey.</p>
               </div>
               <a href="tel:+2349067043359">
-                <div className="min-h-full flex flex-col gap-3 justify-between items-center p-8 aspect-square rounded-full bg-[var(--secondary-color)] ring ring-offset-[6px] ring-inset ring-offset-[var(--secondary-color)] cursor-pointer hover:bg-[var(--secondary-accent-color)] hover:ring-offset-[var(--secondary-accent-color)]">
-                  <img src={call} className='w-14' alt="call now" />
+                <div className="group min-h-full flex justify-center items-center w-[90px] md:w-[100px] lg:w-[120px] aspect-square rounded-full bg-[var(--secondary-color)] ring ring-offset-[5px] lg:ring-offset-[6px] ring-inset ring-offset-[var(--secondary-color)] cursor-pointer hover:bg-[var(--secondary-accent-color)] hover:ring-offset-[var(--secondary-accent-color)]">
+                  <img src={call} className='w-10 md:w-12 lg:w-14 group-hover:hidden' alt="call now" />
+                  <span className="hidden text-white text-md tracking-wider font-extrabold text-md group-hover:block">Call Now</span>
                 </div>
               </a>
             </div>
-            <div className="flex justify-between mt-10">
+            <div className="flex flex-col lg:flex-row justify-between gap-x-8 mt-10">
               <div className="flex flex-col gap-4">
-                <img src={logo} className='w-48' alt="" />
+                <img src={logo} className='w-36 md:w-48' alt="" />
                 <p className="text-neutral-300 text-xs max-w-lg tracking-wider leading-5">
                   A cutting-edge real estate agent that offers a seamless
                   and immersive experience for finding your dream home.
                 </p>
-                <div className="flex justify-between mt-2">
+                <div className="flex flex-col sm:flex-row gap-y-2 sm:gap-0 justify-between mt-2">
                   <div className="flex items-center gap-2.5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-4 aspect-square text-gray-300" viewBox="0 0 16 16">
                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
@@ -42,19 +43,7 @@ function Footer() {
                   </div>
                 </div>
               </div>
-               <div className="flex flex-col items-start">
-                <p className="w-100 mb-3 text-2xl text-start font-medium text-gray-50">Suscribe to get updates.</p>
-                <div className="relative mb-3.5">
-                    <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                        <svg className="w-4 h-4 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-                            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-                        </svg>
-                    </div>
-                    <input type="text" id="email-address-icon" className="bg-transparent border border-gray-300 text-sm text-white rounded-lg focus:ring-green-500 focus:border-green-500 active:border-green-500 block min-w-sm w-100 ps-10 p-2.5 placeholder:text-gray-400" placeholder="name@flowbite.com" />
-                </div>
-                <Button text="Suscribe" />
-                </div>
+              <Suscription />
             </div>
 
             <div className="flex justify-between mt-12">

@@ -12,10 +12,10 @@ function Team() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        className='mt-36 flex flex-col items-center'>
+        className='relative overflow-hidden mt-36 flex flex-col items-center pb-36'>
           <HeadingText text="Team Members" align="center" />
           <SubHeadingText text="Meet our property experts." align="center" />
-          <motion.div variants={cardGroupVariants} className="flex gap-28 items-center max-w-5xl mx-auto mt-12">
+          <motion.div variants={cardGroupVariants} className="flex flex-wrap gap-10 md:gap-28 justify-center items-center max-w-5xl mx-auto mt-12">
             {data.team.map((person, i) => (
                 <motion.div variants={cardVariants} key={i} className="group relative bg-white overflow-hidden z-10 border border-neutral-200 p-4 min-w-60 max-w-60 min-h-[240px] rounded-3xl
                                 hover:-translate-y-2.5 hover:border-transparent hover:drop-shadow-xl">
@@ -64,6 +64,7 @@ function Team() {
                 </motion.div>
             ))}
           </motion.div>
+          <div className="absolute top-2/3 lg:top-1/2 bg-[var(--primary-accent-color)] w-[95%] sm:w-full h-[500px] sm:h-[700px] -z-0" style={{clipPath: 'ellipse(47% 47% at 50% 50%)'}}></div>
     </motion.section>
   )
 }
