@@ -38,7 +38,7 @@ import money from "./assets/services/money.svg"
 // get started section images
 import contactUs from "./assets/get-started/Contact us-bro.svg"
 import requestProposal from "./assets/get-started/Agreement-bro.svg"
-import negotiateTerms from "./assets/get-started/people talking-bro.svg"
+import negotiateTerms from "./assets/get-started/People talking-bro.svg"
 import signContract from "./assets/get-started/Signing a contract-bro.svg"
 import evaluateOptions from "./assets/get-started/settings-bro.svg"
 import reviewContract from "./assets/get-started/Partnership-bro.svg"
