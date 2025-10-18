@@ -40,9 +40,9 @@ import contactUs from "./assets/get-started/Contact us-bro.svg"
 import requestProposal from "./assets/get-started/Agreement-bro.svg"
 import negotiateTerms from "./assets/get-started/People talking-bro.svg"
 import signContract from "./assets/get-started/Signing a contract-bro.svg"
-import evaluateOptions from "./assets/get-started/settings-bro.svg"
+import evaluateOptions from "./assets/get-started/Settings-bro.svg"
 import reviewContract from "./assets/get-started/Partnership-bro.svg"
-import makePayment from "./assets/get-started/paid idea-bro.svg"
+import makePayment from "./assets/get-started/pPaid idea-bro.svg"
 
 // certification images
 import cac from "./assets/certifications/cac-logo.jpg"
