@@ -2,10 +2,11 @@ import Lottie from "lottie-react";
 import HeadingText from "../components/HeadingText"
 import SubHeadingText from "../components/SubHeadingText"
 import mineCraft from "../assets/developments/Minecraft.json"
-import { cardGroupVariants, itemVariants, textVariants, futureDevVariants } from "../variants";
+import {  itemVariants, textVariants, futureDevVariants } from "../variants";
 import {motion} from "framer-motion"
 
 const FutureDevelopments = () => {
+  const images = ["1", "2","3", "4","5", "6", "7", "8", "9", "10", "11", "12", "13", "14"];
 
   return (
     <div id="developments" className="relative mx-auto mt-36 flex flex-col items-center">
@@ -23,30 +24,27 @@ const FutureDevelopments = () => {
                   Though we're still in our early stages, we're already dreaming up the communities of the future.
               </motion.p>
         </motion.div>
-        <motion.div
-          variants={cardGroupVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-8 rounded-2xl bg-[var(--primary-accent-color)]">
-            {Array.from({ length: 14 }).map((_, index) => (
+        <div
+         
+          className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 p-8 rounded-2xl bg-[var(--primary-accent-color)]">
+            {images.map((src, index) => (
               <motion.div
-                key={index}
-                variants={futureDevVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                className="overflow-hidden rounded-lg shadow-lg"
-              >
-                <img
-                  src={`/developments/${index + 1}.jpg`}
-                  alt={`House ${index + 1}`}
-                  className="w-full h-auto block object-cover drop-shadow-md"
-                  loading="lazy"
-                />
-              </motion.div>
-            ))}
-      </motion.div>
+      key={index}
+      variants={futureDevVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
+      className="break-inside-avoid overflow-hidden rounded-xl shadow-lg bg-white/5"
+    >
+      <img
+        src={`/developments/${src}.jpg`}
+        alt={`House ${src}`}
+        className="w-full h-auto object-cover block transition-transform duration-500 hover:scale-105"
+        loading="lazy"
+      />
+    </motion.div>
+        ))}
+      </div>
     </div>
   )
 }
