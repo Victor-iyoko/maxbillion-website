@@ -3,7 +3,9 @@ import data from "../data"
 
 function About() {
   return (
-    <SectionInfo section={data.sectionInfo[2]} />
+    <div className="flex" id="about">
+      <SectionInfo section={data.sectionInfo[2]} />
+    </div>
   )
 }
 

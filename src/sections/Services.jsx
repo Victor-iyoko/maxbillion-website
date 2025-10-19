@@ -9,8 +9,8 @@ import {motion} from 'framer-motion'
 function Services() {
   
   return (
-    <section className='mt-36 relative flex flex-col items-center'>
-        <Lottie loop play animationData={support} className="-z-10 absolute top-0 rotate-[-30deg] end-40 w-40" />
+    <section id="services" className='mt-36 relative flex flex-col items-center'>
+        <Lottie loop play animationData={support} className="-z-10 absolute top-0 rotate-[-30deg] end-0 lg:end-40 w-40" />
         <motion.div       
             variants={textVariants}
             initial="hidden"

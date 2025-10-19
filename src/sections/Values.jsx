@@ -11,7 +11,7 @@ function Values() {
 
   return (
      <section className='relative mt-20 md:mt-24 flex flex-col items-center'>
-          <Lottie loop play animationData={currency} className="-z-10 absolute top-0 rotate-[30deg] start-10 w-40" />
+          <Lottie loop play animationData={currency} className="-z-10 absolute top-0 rotate-[30deg] start-0 lg:start-10 w-40" />
           <motion.div       
             variants={textVariants}
             initial="hidden"

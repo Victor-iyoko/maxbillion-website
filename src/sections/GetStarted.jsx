@@ -17,7 +17,7 @@ import AnimatedBlobs from '../components/AnimatedBlobs';
 
 function GetStarted() {
   return (
-       <section className="relative flex flex-col min-[1050px]:flex-row gap-[50px] justify-between items-start max-w-6xl mx-auto mt-36">
+       <section id='help' className="relative flex flex-col min-[1050px]:flex-row gap-[50px] justify-between items-start max-w-6xl mx-auto mt-36">
             <AnimatedBlobs left={true} />
             <motion.div 
               variants={textVariants}
@@ -34,7 +34,7 @@ function GetStarted() {
                     expect when starting with your service.
                 </motion.p>
                 <motion.div variants={itemVariants}>
-                  <Button dark={true} text="Get in touch"/>
+                  <Button dark={true} link='#contact' text="Get in touch"/>
                 </motion.div>
             </motion.div>
             <motion.div

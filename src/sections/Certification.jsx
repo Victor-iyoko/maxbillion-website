@@ -8,14 +8,14 @@ import Lottie from "lottie-react"
 
 function Certification() {
   return (
-    <div className='mt-36 flex flex-col items-center'>
+    <div id='certifications' className='mt-36 flex flex-col items-center'>
         <motion.div       
             variants={textVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className='relative flex flex-col justify-center items-center'>
-                <Lottie loop play animationData={accreditation} className="-z-10 absolute top-0 rotate-[30deg] -start-40 w-40" />
+                <Lottie loop play animationData={accreditation} className="-z-10 absolute top-0 rotate-[30deg] start-0 lg:-start-40 w-40" />
                 <HeadingText text="Certifications" align="center" />
                 <SubHeadingText text="Our business certifications & compliance" align="center" />
           </motion.div>

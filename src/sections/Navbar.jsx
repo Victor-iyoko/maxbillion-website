@@ -3,6 +3,7 @@ import Button from '../components/Button'
 import menu from '../assets/navbar/menu-button.svg'
 import close from '../assets/navbar/x.svg'
 import { useState } from 'react';
+import data from '../data';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,20 +15,15 @@ function Navbar() {
       </div>
         <div className="lg:flex hidden flex-10/12 justify-center items-center">
           <ul className="flex w-full justify-end items-center text-gray-500 font-bold">
-            <li className='ms-4 tracking-wider'>
-              <a href="#" className='text-sm px-6 py-3 rounded-lg hover:bg-[var(--primary-accent-color)] hover:text-[var(--primary-color)] transition'>Home</a>
-            </li>
-             <li className='ms-4 tracking-wider'>
-              <a href="#" className='text-sm px-6 py-3 rounded-lg hover:bg-[var(--primary-accent-color)] hover:text-[var(--primary-color)] transition'>Services</a>
-            </li>
-             <li className='ms-4 tracking-wider'>
-              <a href="#" className='text-sm px-6 py-3 rounded-lg hover:bg-[var(--primary-accent-color)] hover:text-[var(--primary-color)] transition'>About</a>
-            </li>
-              <li className='ms-4 tracking-wider'>
-              <a href="#" className='text-sm px-6 py-3 rounded-lg hover:bg-[var(--primary-accent-color)] hover:text-[var(--primary-color)] transition'>How to get started</a>
-            </li>
+            {data.navbar.map((item, i) => (
+                <li key={i} className='ms-4 tracking-wider'>
+                  <a href={'#' + item.id} className='text-sm px-6 py-3 rounded-lg hover:bg-[var(--primary-accent-color)] hover:text-[var(--primary-color)] transition'>
+                    {item.name}
+                  </a>
+                </li>
+            ))}
             <li className='ms-4'>
-              <Button text="Contact us" dark={true} />
+              <Button link='#contact' text="Contact us" dark={true} />
             </li>
           </ul>
         </div>
@@ -46,19 +42,19 @@ function Navbar() {
         }`}
       >
         <ul className="flex flex-col items-start gap-6 text-end text-gray-600 font-bold">
-          {["Home", "Services", "About", "How to get started"].map((item, i) => (
+          {data.navbar.map((item, i) => (
             <li key={i}>
               <a
-                href="#"
+                href={"#" + item.id}
                 onClick={() => setMenuOpen(false)}
                 className="block w-fit text-xl px-4 py-2 rounded-lg hover:bg-[var(--primary-accent-color)] hover:text-[var(--primary-color)] transition"
               >
-                {item}
+                {item.name}
               </a>
             </li>
           ))}
           <li className='mt-5'>
-            <Button text="Contact us" dark={true} />
+            <Button link='#contact' text="Contact us" dark={true} />
           </li>
         </ul>
       </div>

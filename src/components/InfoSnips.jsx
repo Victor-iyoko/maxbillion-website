@@ -1,6 +1,6 @@
 function InfoSnips({title, subText, icon}) {
   return (
-        <div className="bg-white flex items-center gap-3 rounded-xl p-3 drop-shadow-xs hover:drop-shadow-none">
+        <div className="bg-white flex items-center gap-3 rounded-xl p-3 border-s-2 border-s-[var(--primary-color)] drop-shadow-xs hover:drop-shadow-none">
             <div className="p-1 rounded-lg bg-[var(--primary-accent-color)] flex items-center justify-center">
                 <img src={icon} className="w-4 aspect-square" alt="info-snippets" />
             </div>

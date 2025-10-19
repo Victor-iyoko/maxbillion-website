@@ -25,7 +25,7 @@ function SectionInfo({section}) {
                   {section.description}
                </motion.p>
                <motion.div variants={itemVariants}>
-                  <Button dark={true} text="Get in touch"/>
+                  <Button link={section.button.link} dark={true} text={section.button.text} />
                </motion.div>
                <motion.div variants={itemVariants} className="flex justify-start flex-wrap gap-3 mt-7">
                 {section.infoSnips.map((info, i) => <InfoSnips key={i} title={info.title} subText={info.subText} icon={info.icon} /> )}

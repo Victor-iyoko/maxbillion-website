@@ -69,6 +69,34 @@ const data = {
     suscriptionEmailTempId: "template_e8ey9jm",
     googleScriptWebUrl: "https://script.google.com/macros/s/AKfycbzVH3fMIpYpiE0i5ViUbyt_hzBw3ng8PBAGH2Dim3D3_UbohHhEt5t-bd2UC5A3dYE/exec",
 
+    navbar: [
+        {name: "Home", id: "home"},
+        {name: "Services", id: "services"},
+        {name: "About", id: "about"},
+        {name: "How to get started", id: "help"}
+    ],
+
+    hero: [
+        {
+            mainText: "journey to your perfect home.",
+            subText: " Let our expert team guide you through the magic of real estate and helping you find the perfect home where your dreams take flight. ",
+            cta: true,
+            img: '/carousel/journey-to-home.jpg'
+        },
+        {
+            mainText: "Invest Smart, Live Better",
+            subText: "Secure your future with properties that combine high value, great locations, and timeless design.",
+            cta: false,
+            img: '/carousel/invest-smart.jpg'
+        },
+        {
+            mainText: "Modern Living, Redefined",
+            subText: "Discover elegant spaces designed for comfort, style, and community - your dream home starts here.",
+            cta: false,
+            img: '/carousel/modern-living.jpg'
+        }
+    ],
+
     values: [
         {
             mainText: "Integrity & Transparency",
@@ -112,6 +140,10 @@ const data = {
                 { title: "Affordabble luxury", subText: "Premium homes at competitive prices.", icon: diamond }
             ],
             img: houseWithKey,
+            button: {
+                text: "Get in touch",
+                link: "#contact"
+            },
             imgPos: 2
         },    
         { 
@@ -123,6 +155,10 @@ const data = {
                 { title: "Transparent Agreements", subText: "No hidden fees, clear contracts.", icon: openBook }
             ],
             img: manHoldingHouse,
+               button: {
+                text: "Our vision",
+                link: "#developments"
+            },
             imgPos: 1
         },
         {   
@@ -135,6 +171,10 @@ const data = {
                 { title: "Our Mission", subText: "Making property ownership easy.", icon: target }
             ],
             img: people,
+               button: {
+                text: "Get updates",
+                link: "#suscribe"
+            },
             imgPos: 2
         }
     ],
