@@ -1,8 +1,12 @@
 import logo from '../assets/logo-white.png'
 import call from '../assets/call-outbound.svg'
 import Suscription from '../components/Suscription'
+import { useRef } from 'react';
+import animationData from "../assets/calling.json"
+import Lottie from 'lottie-react';
 
 function Footer() {
+  const lottieRef = useRef();
   return (
     <footer>
       <div className="bg-[var(--primary-color)] p-2 rounded-4xl">
@@ -14,9 +18,17 @@ function Footer() {
                 <p className="hidden sm:block text-gray-200 text-[10px] md:text-xs lg:text-sm leading-5 max-w-[250px] md:max-w-lg lg:max-w-full">Experience top-notch customer care service and let us guide you on your property journey.</p>
               </div>
               <a href="tel:+2349067043359">
-                <div className="group min-h-full flex justify-center items-center w-[90px] md:w-[100px] lg:w-[120px] aspect-square rounded-full bg-[var(--secondary-color)] ring ring-offset-[5px] lg:ring-offset-[6px] ring-inset ring-offset-[var(--secondary-color)] cursor-pointer hover:bg-[var(--secondary-accent-color)] hover:ring-offset-[var(--secondary-accent-color)]">
-                  <img src={call} className='w-10 md:w-12 lg:w-14 group-hover:hidden' alt="call now" />
-                  <span className="hidden text-white text-md tracking-wider font-extrabold text-md group-hover:block">Call Now</span>
+                <div
+                  onMouseEnter={() => lottieRef.current.play()}
+                  onMouseLeave={() => lottieRef.current.stop()}
+                  className="relative min-h-full flex justify-center items-center w-[90px] md:w-[100px] lg:w-[120px] aspect-square rounded-full bg-[var(--secondary-color)] ring ring-offset-[5px] lg:ring-offset-[6px] ring-inset ring-offset-[var(--secondary-color)] cursor-pointer hover:bg-[var(--secondary-accent-color)] hover:ring-offset-[var(--secondary-accent-color)]"> 
+                    <Lottie
+                      lottieRef={lottieRef}
+                      animationData={animationData}
+                      loop={true}
+                      autoplay={false}
+                      className='w-12 md:w-14 lg:w-16 absolute translate-middle'
+                    /> 
                 </div>
               </a>
             </div>

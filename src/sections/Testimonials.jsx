@@ -47,7 +47,7 @@ function Testimonials() {
       viewport={{ once: true, amount: 0.3 }}
       className="mt-36 relative flex flex-col items-center">
           {/* <img src={speaker} className="absolute -top-20 rotate-[30deg] start-0 w-52" /> */}
-          <Lottie loop play animationData={speaker} className="absolute top-0 rotate-[30deg] start-0 lg:start-30 w-40" />
+          <Lottie loop play animationData={speaker} className="absolute top-0 rotate-[30deg] start-0 lg:start-30 w-40 -z-10" />
           <HeadingText text="Testimonials" align="center" />
           <SubHeadingText text="What property owners are saying." align="center" />
           <motion.div variants={itemVariants} className="flex flex-[5] max-[1015px]:flex-col items-start gap-6 max-w-5xl mx-auto mt-12">

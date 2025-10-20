@@ -17,7 +17,14 @@ function Address() {
           <HeadingText text="Address" align="center" />
           <SubHeadingText text="Locate our main office now." align="center" />
           <motion.div variants={itemVariants} className="w-full overflow-hidden rounded-2xl mt-12 border-4 border-[var(--primary-accent-color)] h-[350px] sm:h-[500px]">
-            <iframe width="100%" height="100%" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=NO%2030,%20OTADA%20ROAD%20,%20OTUKPO,%20BENUE%20STATE,%20NIGERIA+(Maxbillion)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/drones/">drones ireland</a></iframe>
+              <iframe
+                src="https://www.google.com/maps?q=7.22625552100241, 8.146769372513585&hl=en&z=14&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
           </motion.div>
     </motion.section>
   )

@@ -31,7 +31,7 @@ return (
       >
         <div
           slot="container-start"
-          className="parallax-bg bg-[url('/carousel/three.jpg')]"
+          className="parallax-bg bg-[url('/carousel/house.jpg')]"
           data-swiper-parallax="-23%"
         ></div>
          <div className="absolute inset-0 bg-[var(--primary-color)] opacity-40"></div>
