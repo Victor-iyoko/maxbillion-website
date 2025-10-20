@@ -300,25 +300,25 @@ const data = {
 
     testimonials: [
         {
-            name: "Ayomide Jalade",
-            occupation: "Land-lord and property owner",
+            name: "Abanku Lucy",
+            occupation: "property owner",
             img: t1,
             ratings: 5,
-            review: "Using this platform have completely transformed how we approach real estate management. The versatile interface has allowed us to create an engaging user experience."
+            review: "I recently had the pleasure of working with Maxbillion to acquire my dream property, and i couldn't be more thrilled with the experience. From start to finish the team was professional."
         },
         {
-            name: "Ayomide Jalade",
-            occupation: "Land-lord and property owner",
+            name: "Okpe Emmanuel Owoicho",
+            occupation: "General Merchandise Nigeria limited",
             img: t2,
             ratings: 5,
-            review: "Using this platform have completely transformed how we approach real estate management. The versatile interface has allowed us to create an engaging user experience."
+            review: "Keep up the great work, Maxbillion!. Your dedication to providing affordable and secure housing solutions continues to make a positive difference in the real estate industry."
         },
         {
-            name: "Ayomide Jalade",
-            occupation: "Land-lord and property owner",
+            name: "Oche Adakole",
+            occupation: "Land-lord",
             img: t3,
             ratings: 5,
-            review: "Using this platform have completely transformed how we approach real estate management. The versatile interface has allowed us to create an engaging user experience."
+            review: "I am writing to enthusiastically recommend Maxbillion Real estate and general contract, I had the pleasure of working withh them on several successful projects including the purchase of land."
         },
         {
             name: "Ayomide Jalade",
@@ -345,10 +345,10 @@ const data = {
 
     team: [
         {
-            name: "catherine bagwell",
+            name: "Abah Hadiza",
             role: "secretary",
             img: member1,
-            bio: "Ethusiastic, passionate and hardworking is what i'll use to describe myself.",
+            bio: "Efficient and organized secretary ensuring seamless communication across departments.",
             links: {
                 faceBook: "https://www.facebook.com",
                 whatsApp: "https://www.whatspp.com",
@@ -356,7 +356,7 @@ const data = {
             }
         },
         {
-            name: "don self",
+            name: "Maxwell Billion",
             role: "ceo",
             img: member2,
             bio: "Ethusiastic, passionate and hardworking is what i'll use to describe myself.",
@@ -367,10 +367,10 @@ const data = {
             }
         },
         {
-            name: "sara tancredi",
-            role: "director",
+            name: "Ipoule Joy",
+            role: "accountant",
             img: member3,
-            bio: "Ethusiastic, passionate and hardworking is what i'll use to describe myself.",
+            bio: "Detail-oriented accountant managing finances, budgets, and reports with accuracy.",
             links: {
                 faceBook: "https://www.facebook.com",
                 whatsApp: "https://www.whatspp.com",

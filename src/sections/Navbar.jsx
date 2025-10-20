@@ -53,7 +53,7 @@ function Navbar() {
               </a>
             </li>
           ))}
-          <li className='mt-5'>
+          <li className='mt-5 ps-4'>
             <Button link='#contact' text="Contact us" dark={true} />
           </li>
         </ul>

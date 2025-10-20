@@ -53,7 +53,7 @@ function ContactUs() {
       );
   };
   return (
-    <div id="contact" className="relative flex flex-col min-[1050px]:flex-row gap-[62px] justify-between items-start max-w-6xl mx-auto mt-36">
+    <div id="contact" className="relative pt-10 flex flex-col min-[1050px]:flex-row gap-[62px] justify-between items-start max-w-6xl mx-auto mt-36">
         <Alert
           type={alert.type}
           message={alert.message}
