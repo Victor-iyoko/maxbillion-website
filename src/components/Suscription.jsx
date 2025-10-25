@@ -20,7 +20,7 @@ function Suscription() {
 
     try {
         // 2️⃣ Send data to Google Sheets via Apps Script
-         let result = await fetch("http://localhost:5000/subscribe", {
+         let result = await fetch("https://maxbillion-server.onrender.com/subscribe", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
