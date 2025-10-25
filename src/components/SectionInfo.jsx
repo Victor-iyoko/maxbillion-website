@@ -7,7 +7,6 @@ import {motion} from 'framer-motion'
 import AnimatedBlobs from "./AnimatedBlobs"
 
 function SectionInfo({section}) {
- console.log(window.innerWidth);
   return (
        <section className="relative flex flex-col min-[1050px]:flex-row gap-[62px] justify-between items-center min-[1050px]:items-start max-w-6xl mx-auto mt-36">     
           <AnimatedBlobs left={section.imgPos !== 1} />

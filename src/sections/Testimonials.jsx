@@ -60,7 +60,7 @@ function Testimonials() {
                   {data.testimonials.map((testimonial, i) => (
                     <motion.div variants={futureDevVariants} key={i} onClick={() => setActiveIndex(i)} 
                         className={`group w-20 md:w-25 aspect-square overflow-hidden rounded-2xl cursor-pointer ring-4 hover:ring-[var(--primary-color)] ${i === activeIndex ? "ring-[var(--primary-color)]" : "ring-transparent"}`}>
-                      <img src={testimonial.img} className={`h-full w-full group-hover:scale-125 ${i === activeIndex ? "scale-125" : ""}`} alt={testimonial.name} />
+                      <img src={testimonial.img} className={`h-full w-full object-cover group-hover:scale-125 ${i === activeIndex ? "scale-125" : ""}`} alt={testimonial.name} />
                     </motion.div>
                   ))}
               </motion.div>

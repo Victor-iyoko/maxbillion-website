@@ -8,7 +8,7 @@ import Lottie from 'lottie-react';
 function Footer() {
   const lottieRef = useRef();
   return (
-    <footer>
+    <footer className='z-40'>
       <div className="bg-[var(--primary-color)] p-2 rounded-4xl">
         <div className="relative z-10 text-white rounded-3xl h-full border-2 border-[var(--secondary-color)] p-4 sm:p-6 md:p-10 pb-12">
            

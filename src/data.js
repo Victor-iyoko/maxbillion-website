@@ -67,7 +67,7 @@ const data = {
     emailPublicId: "W5hqPX9UR3mRIezjj",
     contactEmailTempId: "template_4b7kpij",
     suscriptionEmailTempId: "template_e8ey9jm",
-    googleScriptWebUrl: "https://script.google.com/macros/s/AKfycbzVH3fMIpYpiE0i5ViUbyt_hzBw3ng8PBAGH2Dim3D3_UbohHhEt5t-bd2UC5A3dYE/exec",
+    googleScriptWebUrl: "https://script.google.com/macros/s/AKfycbxqrCaLbXAlNJaV05vLzM5Fv2vE8fiMESQ1X0iIUcIdFkMUBOI4rapWtvOSbGKmWx3q/exec",
 
     navbar: [
         {name: "Home", id: "home"},
@@ -307,39 +307,39 @@ const data = {
             review: "I recently had the pleasure of working with Maxbillion to acquire my dream property, and i couldn't be more thrilled with the experience. From start to finish the team was professional."
         },
         {
-            name: "Okpe Emmanuel Owoicho",
-            occupation: "General Merchandise Nigeria limited",
+            name: "Tyosula Samuel Aondona",
+            occupation: "Land-lord",
             img: t2,
             ratings: 5,
             review: "Keep up the great work, Maxbillion!. Your dedication to providing affordable and secure housing solutions continues to make a positive difference in the real estate industry."
         },
         {
-            name: "Oche Adakole",
-            occupation: "Land-lord",
+            name: "Okpe Emmanuel Owoicho",
+            occupation: "General Merchandise Nigeria limited",
             img: t3,
             ratings: 5,
             review: "I am writing to enthusiastically recommend Maxbillion Real estate and general contract, I had the pleasure of working withh them on several successful projects including the purchase of land."
         },
         {
-            name: "Ayomide Jalade",
-            occupation: "Land-lord and property owner",
+            name: "Sunday Amen",
+            occupation: "Amex16 topmind concepts",
             img: t4,
             ratings: 5,
-            review: "Using this platform have completely transformed how we approach real estate management. The versatile interface has allowed us to create an engaging user experience."
+            review: "At Amex16 topmind concepts we highly recommend you to patner with MAXBIlLION because they always keep up the amazing work. Their dedication is truly one of a kind."
         },
         {
-            name: "Ayomide Jalade",
-            occupation: "Land-lord and property owner",
+            name: "Nafisa Mamuda",
+            occupation: "Property owner",
             img: t5,
             ratings: 5,
-            review: "Using this platform have completely transformed how we approach real estate management. The versatile interface has allowed us to create an engaging user experience."
+            review: "Great job, Maxbillion Real Estate Company! I really appreciate the quality of your worl and the standard of your housing projecs. You're truly doing an amazing job - keep it up."
         },
         {
-            name: "Ayomide Jalade",
-            occupation: "Land-lord and property owner",
+            name: "Sunday Veronica",
+            occupation: "Property owner",
             img: t6,
             ratings: 5,
-            review: "Using this platform have completely transformed how we approach real estate management. The versatile interface has allowed us to create an engaging user experience."
+            review: "Great job Maxbillion real estate company, I am very excited to see your company grow and the work done on your housing projects, You have done and amazing job. Keep it up!"
         },
     ],
 
@@ -356,7 +356,7 @@ const data = {
             }
         },
         {
-            name: "Maxwell Billion",
+            name: "Oyije Maxwell",
             role: "ceo",
             img: member2,
             bio: "Ethusiastic, passionate and hardworking is what i'll use to describe myself.",
@@ -368,7 +368,7 @@ const data = {
         },
         {
             name: "Ipoule Joy",
-            role: "accountant",
+            role: "director",
             img: member3,
             bio: "Detail-oriented accountant managing finances, budgets, and reports with accuracy.",
             links: {

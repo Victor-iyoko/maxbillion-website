@@ -20,26 +20,49 @@ function Suscription() {
 
     try {
         // 2️⃣ Send data to Google Sheets via Apps Script
-        await fetch(`https://corsproxy.io/?${encodeURIComponent(data.googleScriptWebUrl)}`, {
+         let result = await fetch("http://localhost:5000/subscribe", {
             method: "POST",
-            mode: "cors",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
+          });
+
+      // result = JSON.parse(result)
+      const formattedResult = await result.json()
+
+      if (formattedResult.status === "error") {
+        setAlert({
+          show: true,
+          type: "error",
+          message: formattedResult.message,
+        })
+      } else if (formattedResult.status === "duplicate") {
+        setAlert({
+          show: true,
+          type: "error",
+          message: formattedResult.message,
         });
+      }  else if (formattedResult.status === "success") {
+           // 1️⃣ Send email notification via EmailJS
+          await emailjs.send(
+            data.emailServiceId,
+            data.suscriptionEmailTempId,
+            formData,
+            data.emailPublicId
+          );
 
-        // 1️⃣ Send email notification via EmailJS
-       await emailjs.send(
-        data.emailServiceId,
-        data.suscriptionEmailTempId,
-        formData,
-        data.emailPublicId
-      );
-
-      setAlert({
-        show: true,
-        type: "success",
-        message: "Your suscription was successfully!",
-       });
+          setAlert({
+            show: true,
+            type: "success",
+            message: formattedResult.message,
+          });
+      }
+       else {
+        setAlert({
+          show: true,
+          type: "error",
+          message: "Something went wrong, try again later!",
+         });
+      }
       setFormData({ email: "" });
       setIsLoading(false);
       setTimeout(() => setAlert({ ...alert, show: false }), 5000);

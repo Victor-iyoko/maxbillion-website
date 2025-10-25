@@ -18,30 +18,37 @@ function Team() {
           <motion.div variants={cardGroupVariants} className="flex flex-wrap gap-10 md:gap-28 justify-center items-center max-w-5xl mx-auto mt-12">
             {data.team.map((person, i) => (
                 <motion.div variants={cardVariants} key={i} className="group relative bg-white overflow-hidden z-10 border border-neutral-200 p-4 min-w-60 max-w-60 min-h-[240px] rounded-3xl
-                                hover:-translate-y-2.5 hover:border-transparent hover:drop-shadow-xl">
+                                hover:-translate-y-2.5 hover:border-transparent hover:drop-shadow-xl
+                                active:-translate-y-2.5 active:border-transparent active:drop-shadow-xl">
                     <div className="relative rounded-2xl overflow-hidden w-full min-h-[216px] flex flex-col justify-between items-center">
                         <div className="p-1.5 relative mt-2 border rounded-full border-[var(--primary-color)]
                                         group-hover:before:scale-400 group-hover:border-neutral-100
+                                        group-active:before:scale-400 group-active:border-neutral-100
                                         before:w-full before:h-full before:rounded-full before:-z-10 group-hover:before:bg-[var(--primary-color)] before:absolute before:top-0 before:start-0 before:transition origin-center">
                             <div className="rounded-full overflow-hidden w-[100px] aspect-square">
                             <img src={person.img} className="w-100" alt={person.name} />
                             </div>
                         </div>
                         <div className="absolute h-full rounded-2xl p-2 translate-y-[138px]
-                                        group-hover:delay-700 group-hover:translate-y-0 group-hover:bg-[var(--secondary-color)]">
+                                        group-hover:delay-700 group-hover:translate-y-0 group-hover:bg-[var(--secondary-color)]
+                                        group-active:delay-700 group-active:translate-y-0 group-active:bg-[var(--secondary-color)]">
                             <h4 className="text-neutral-500 text-center font-bold text-md
-                                            group-hover:text-white group-hover:font-medium capitalize">
+                                            group-hover:text-white group-hover:font-medium
+                                            group-active:text-white group-active:font-medium capitalize">
                                 {person.name}
                             </h4>
                             <h4 className="text-[var(--secondary-color)] text-center font-bold text-sm tracking-wider
-                                        group-hover:text-neutral-200 group-hover:font-medium uppercase">
+                                        group-hover:text-neutral-200 group-hover:font-medium
+                                        group-active:text-neutral-200 group-active:font-medium uppercase">
                                 {person.role}
                             </h4>
                             <div className="flex items-center justify-center mt-3 animate-bounce">
                                 <span className="w-2.5 translate-x-0.5 rotate-45 border border-neutral-400 
-                                                group-hover:rotate-0 delay-500 group-hover:w-[50%] group-hover:border-neutral-200"></span>
+                                                group-hover:rotate-0 delay-500 group-hover:w-[50%] group-hover:border-neutral-200
+                                                group-active:rotate-0 group-active:w-[50%] group-active:border-neutral-200" />
                                 <span className="w-2.5 -translate-x-0.5 -rotate-45 border border-neutral-400
-                                                group-hover:rotate-0 delay-500 group-hover:w-[50%] group-hover:border-neutral-200"></span>
+                                                group-hover:rotate-0 delay-500 group-hover:w-[50%] group-hover:border-neutral-200
+                                                group-active:rotate-0 group-active:w-[50%] group-active:border-neutral-200" />
                             </div>
                             <div className="flex flex-col gap-3 mt-3">
                                 <h6 className="text-xs text-neutral-100 leading-5 text-center tracking-wider">
